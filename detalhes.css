@@ -1,0 +1,291 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #2C003E;
+    color: #FFFFFF;
+    overflow-x: hidden; /* Previne rolagem horizontal */
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+/* Estilo do header */
+header {
+    background-color: #4A007D;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Estilo dos links de navegação */
+nav a {
+    color: #FFFFFF;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Estilo da seção de detalhes do curso */
+.curso-detalhes {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #37004B;
+    border-radius: 10px;
+}
+
+.curso-detalhes h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #FFD700;
+}
+
+.curso-detalhes img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+/* Layout do conteúdo do curso */
+.curso-conteudo {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.descricao {
+    width: 60%;
+}
+
+.informacoes {
+    width: 40%;
+    background-color: #4A007D;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.informacoes p {
+    margin: 10px 0;
+}
+
+.botao-compra {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #FFD700;
+    color: #2C003E;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+/* Estilo do footer */
+footer {
+    background-color: #4A007D;
+    padding: 15px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+    color: #FFD700;
+    font-size: 0.9em;
+}
+
+/* Estilos do pop-up */
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.popup-conteudo {
+    background-color: #4A007D;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow-y: auto; /* Adiciona rolagem se necessário */
+}
+
+.fechar {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5em;
+    cursor: pointer;
+    color: #FFD700;
+}
+
+#parcelas-container {
+    display: none;
+}
+
+#parcelas-container.show {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Estilos específicos para a barra de rolagem */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #FFD700;
+    border-radius: 10px;
+    border: 3px solid #2C003E;
+}
+
+body::-webkit-scrollbar-track {
+    background: #2C003E;
+    border-radius: 10px;
+}
+
+/* Estilos dos campos e botões do pop-up */
+.popup-conteudo input, .popup-conteudo select, .popup-conteudo button {
+    display: block;
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    background-color: #2C003E;
+    color: #FFD700;
+}
+
+.popup-conteudo input:focus, .popup-conteudo select:focus, .popup-conteudo button:focus {
+    border-color: #FFD700;
+    outline: none;
+}
+
+.popup-conteudo button {
+    background-color: #FFD700;
+    color: #2C003E;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Estilos das opções de pagamento */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-group input {
+    appearance: none;
+    -webkit-appearance: none;
+    background-color: #2C003E;
+    border: 2px solid #FFD700;
+    border-radius: 5px;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.checkbox-group input:checked::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 10px;
+    background-color: #FFD700;
+    border-radius: 2px;
+}
+
+#parcelas-container {
+    display: none;
+    flex-direction: column;
+}
+
+#parcelas-container.show {
+    display: flex;
+    flex-direction: column;
+}
+
+#parcelas-container label, #parcelas-container select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+/* Responsividade */
+
+/* Tablets */
+@media (max-width: 992px) {
+    .curso-conteudo {
+        flex-direction: column;
+    }
+
+    .descricao, .informacoes {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .curso-detalhes h1 {
+        font-size: 2em;
+    }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+    .curso-detalhes h1 {
+        font-size: 1.8em;
+    }
+
+    .curso-detalhes img {
+        max-height: 300px;
+    }
+
+    .botao-compra {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .popup-conteudo {
+        width: 95%;
+    }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 576px) {
+    .curso-detalhes h1 {
+        font-size: 1.5em;
+    }
+
+    .botao-compra {
+        font-size: 0.9em;
+    }
+
+    .popup-conteudo {
+        padding: 15px;
+    }
+
+    .popup-conteudo input, .popup-conteudo select, .popup-conteudo button {
+        width: calc(100% - 20px);
+    }
+}

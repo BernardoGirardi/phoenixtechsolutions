@@ -1,0 +1,240 @@
+/* Estilos Gerais */  
+body {  
+    width: 100%;  
+    height: 100vh; /* Garante que o body tenha a altura total da viewport */  
+    margin: 0;  
+    overflow: hidden; /* Impede a rolagem da página */  
+    font-family: 'Bebas Neue', sans-serif;  
+}  
+
+.video-background {  
+    position: fixed;  
+    top: 0;  
+    left: 0;  
+    width: 100%;  
+    height: 100%;  
+    object-fit: cover;  
+    z-index: -1;  
+}  
+
+.main-login, .main-register {  
+    width: 100%;  
+    height: 100%;  
+    display: flex;  
+    align-items: center; /* Centraliza verticalmente */  
+    justify-content: center; /* Centraliza horizontalmente */  
+    padding: 20px; /* Adiciona padding para evitar que o conteúdo encoste nas bordas */  
+    box-sizing: border-box; /* Inclui padding e border na largura total */  
+}  
+
+.left-login, .left-register, .right-login, .right-register {  
+    width: 50%; /* Mantém 50% para desktop */  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    position: relative;  
+}  
+
+.left-login, .left-register {  
+    flex-direction: column;  
+    text-align: center;  
+    padding-right: 20px; /* Espaço entre a imagem e o limite da tela */  
+}  
+
+.left-login h1, .left-register h1 {  
+    color: #00ff88;  
+    font-weight: 800;  
+    font-size: 60pt; /* Tamanho fixo para desktop */  
+    margin: 0px 0 10px 0;  
+}  
+
+.left-login-img, .left-register-img {  
+    width: 400px; /* Largura fixa para desktop */  
+    height: auto;  
+    box-sizing: border-box;  
+}  
+
+.right-login, .right-register {  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    position: relative;  
+}  
+
+.card-login, .card-register {  
+    width: 400px; /* Largura fixa para desktop */  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    padding: 30px 35px;  
+    background: #2f2841;  
+    border-radius: 20px;  
+    box-shadow: 0px 10px 40px #00000056;  
+    box-sizing: border-box;  
+    margin-left: 20px; /* Espaço entre o card e a imagem */  
+    transition: all 0.3s ease; /* Transições suaves */  
+}  
+
+.card-login > h1, .card-register > h1 {  
+    color: #00ff88;  
+    font-weight: 500;  
+    margin: 0;  
+    font-size: 40pt; /* Tamanho fixo para desktop */  
+}  
+
+.textfield {  
+    width: 350px;  
+    margin: 10px 0; /* Margem padrão */  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    justify-content: center;  
+}  
+
+.textfield > input {  
+    width: 100%;  
+    border: none;  
+    border-radius: 10px;  
+    padding: 15px;  
+    background: #514869;  
+    color: #f0ffffde;  
+    font-size: 14pt;  
+    box-shadow: 0px 10px 40px #00000056;  
+    outline: none;  
+    box-sizing: border-box;  
+}  
+
+.textfield > input::placeholder {  
+    color: rgba(255, 255, 255, 0.712);  
+}  
+
+.btn-login, .btn-register {  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;  
+    padding: 16px 0;  
+    margin: 15px 0;  
+    border: none;  
+    border-radius: 8px;  
+    outline: none;  
+    text-transform: uppercase;  
+    font-weight: 800;  
+    letter-spacing: 4px;  
+    color: #2b134b;  
+    background: #00ff88;  
+    cursor: pointer;  
+    box-shadow: 0px 10px 40px -12px #00ff8052;  
+    transition: background 0.3s ease, transform 0.2s ease; /* Transições suaves */  
+    text-align: center;
+    font-size: 13pt;
+}  
+a:link { 
+    text-decoration: none; 
+  } 
+  a:visited { 
+    text-decoration: none; 
+  } 
+  a:hover { 
+    text-decoration: none; 
+  } 
+  a:active { 
+    text-decoration: none; 
+  }
+.btn-login:hover, .btn-register:hover {  
+    transform: translateY(-2px);  
+    background: #00e57a; /* Mudança de cor ao passar o mouse */  
+}  
+
+.btn-register {  
+    background: #ffcc00;  
+    box-shadow: 0px 10px 40px -12px #ffcc0052;  
+}  
+
+.btn-register:hover {  
+    background: #e6b800; /* Mudança de cor ao passar o mouse */  
+}  
+
+/* Estilo do link para o botão de registro e o link para voltar ao login */  
+.btn-back, .link-back {  
+    color: inherit; /* Remove a cor do link e herda a cor do pai */  
+    text-decoration: none; /* Remove o traço do link */  
+    display: block; /* Garante que o link ocupe uma linha inteira */
+    width: 100%; /* Mesma largura do botão de registro */
+    padding: 16px 0; /* Mesmo padding dos botões */
+    margin-top: 10px; /* Espaço entre o botão e o link */
+    text-align: center; /* Centraliza o texto */
+    background-color: #00ff88; /* Cor de fundo igual ao botão de login */
+    color: #2b134b; /* Mesma cor do texto do botão de login */
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    text-decoration: none; /* Remove a sublinha do link */
+    border-radius: 8px; /* Mesma borda dos botões */
+    box-shadow: 0px 10px 40px -12px #00ff8052; /* Mesma sombra do botão de login */
+    transition: background 0.3s ease, transform 0.2s ease; /* Transições suaves */
+}
+
+.btn-back:hover, .link-back:hover {
+    transform: translateY(-2px);
+    background: #00e57a; /* Mudança de cor ao passar o mouse, igual ao botão de login */
+}
+
+/* Responsividade */  
+@media only screen and (max-width: 1200px) {  
+    .left-login, .left-register {  
+        padding-right: 15px;  
+    }  
+}  
+
+@media only screen and (max-width: 992px) {  
+    .left-login, .left-register {  
+        padding-right: 10px;  
+    }  
+}  
+
+@media only screen and (max-width: 768px) {  
+    .main-login, .main-register {  
+        flex-direction: column;  
+        align-items: center;  
+    }  
+    .left-login, .left-register, .right-login, .right-register {  
+        width: 100%;  
+        height: auto;  
+        padding: 0;  
+    }  
+    .left-login-img, .left-register-img {  
+        width: 70vw;  
+        max-width: 350px;  
+        margin-bottom: 20px;  
+    }  
+    .card-login, .card-register {  
+        width: 90%;  
+        margin-left: 0;  
+        margin-top: 20px;  
+    }  
+}  
+
+@media only screen and (max-width: 600px) {  
+    .card-login, .card-register {  
+        width: 95%;  
+        margin-left: 0;  
+        margin-top: 10px;  
+    }  
+    .textfield {  
+        width: 100%;  
+        margin: 5px 0;  
+    }  
+}  
+
+@media only screen and (max-width: 400px) {  
+    .left-login h1, .left-register h1 {  
+        font-size: 40pt; /* Mantém o tamanho do título em telas pequenas */  
+    }  
+    .card-login > h1, .card-register > h1 {  
+        font-size: 40pt; /* Mantém o tamanho do título em telas pequenas */  
+    }  
+    .textfield > input {  
+        font-size: 5vw; /* Tamanho de fonte responsivo para telas muito pequenas */  
+    }  
+}

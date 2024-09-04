@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PhoenixTech Solutions</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS Personalizado -->
+    <link rel="stylesheet" href="painel.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <img src="./phoenixtech_logo_with_large_text_default_font (2).png" alt="Logotipo da PhoenixTech" class="logo">
+            <h1 class="site-title">PhoenixTech</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Alternar navegação">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#courses">Cursos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#location">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero text-center text-light py-5">
+        <div class="container">
+            <h1>Bem-vindo à PhoenixTech Solutions</h1>
+            <p>Soluções tecnológicas de ponta para transformar seu futuro.</p>
+        </div>
+    </header>
+
+    <!-- Carousel Section -->
+    <section class="carousel-section py-5">
+        <div id="coursesCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Curso 1 -->
+                <div class="carousel-item active">
+                    <img src="./devweb.jpg" class="d-block w-100" alt="Curso de Programação Web">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Programação Web</h5>
+                        <p>R$ 450,00 - 12 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 2 -->
+                <div class="carousel-item">
+                    <img src="./devmobile.jpg" class="d-block w-100" alt="Curso de Desenvolvimento Mobile">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Desenvolvimento Mobile</h5>
+                        <p>R$ 500,00 - 14 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 3 -->
+                <div class="carousel-item">
+                    <img src="./datascience.jpg" class="d-block w-100" alt="Curso de Data Science">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Data Science</h5>
+                        <p>R$ 500,00 - 16 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 4 -->
+                <div class="carousel-item">
+                    <img src="./devgame.jpg" class="d-block w-100" alt="Curso de Desenvolvimento de Jogos">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Desenvolvimento de Jogos</h5>
+                        <p>R$ 500,00 - 18 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 5 -->
+                <div class="carousel-item">
+                    <img src="./devops.jpg" class="d-block w-100" alt="Curso de DevOps">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de DevOps</h5>
+                        <p>R$ 450,00 - 10 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 6 -->
+                <div class="carousel-item">
+                    <img src="./segurança.jpg" class="d-block w-100" alt="Curso de Segurança da Informação">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Segurança da Informação</h5>
+                        <p>R$ 500,00 - 12 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 7 -->
+                <div class="carousel-item">
+                    <img src="./cloud.jpg" class="d-block w-100" alt="Curso de Cloud Computing">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Cloud Computing</h5>
+                        <p>R$ 450,00 - 12 semanas</p>
+                    </div>
+                </div>
+                <!-- Curso 8 -->
+                <div class="carousel-item">
+                    <img src="./analise-negocios.jpg" class="d-block w-100" alt="Curso de Análise de Negócios">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Curso de Análise de Negócios</h5>
+                        <p>R$ 400,00 - 8 semanas</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Courses Cards Section -->
+    <section id="courses" class="courses-section py-5 bg-dark">
+        <div class="container">
+            <h1 class="text-center text-light mb-4">Nossos Cursos</h1>
+            <div class="row">
+                <!-- Card Curso 1 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./devweb.jpg" class="card-img-top" alt="Curso de Programação Web">
+                        <div class="card-body">
+                            <h5 class="card-title">Programação Web</h5>
+                            <p class="card-text">R$ 450,00</p>
+                            <p class="card-text"><small>Duração: 12 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="programação-web.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 2 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./devmobile.jpg" class="card-img-top" alt="Curso de Desenvolvimento Mobile">
+                        <div class="card-body">
+                            <h5 class="card-title">Desenvolvimento Mobile</h5>
+                            <p class="card-text">R$ 500,00</p>
+                            <p class="card-text"><small>Duração: 14 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="desenvolvimento-mobile.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 3 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./datascience.jpg" class="card-img-top" alt="Curso de Data Science">
+                        <div class="card-body">
+                            <h5 class="card-title">Data Science</h5>
+                            <p class="card-text">R$ 500,00</p>
+                            <p class="card-text"><small>Duração: 16 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="data-science.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 4 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./devgame.jpg" class="card-img-top" alt="Curso de Desenvolvimento de Jogos">
+                        <div class="card-body">
+                            <h5 class="card-title">Desenvolvimento de Jogos</h5>
+                            <p class="card-text">R$ 500,00</p>
+                            <p class="card-text"><small>Duração: 18 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="desenvolvimento-jogos.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 5 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./devops.jpg" class="card-img-top" alt="Curso de DevOps">
+                        <div class="card-body">
+                            <h5 class="card-title">DevOps</h5>
+                            <p class="card-text">R$ 450,00</p>
+                            <p class="card-text"><small>Duração: 10 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="devops.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 6 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="segurança.jpg" class="card-img-top" alt="Curso de Segurança da Informação">
+                        <div class="card-body">
+                            <h5 class="card-title">Segurança da Informação</h5>
+                            <p class="card-text">R$ 500,00</p>
+                            <p class="card-text"><small>Duração: 12 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="segurança-informação.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 7 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./cloud.jpg" class="card-img-top" alt="Curso de Cloud Computing">
+                        <div class="card-body">
+                            <h5 class="card-title">Cloud Computing</h5>
+                            <p class="card-text">R$ 450,00</p>
+                            <p class="card-text"><small>Duração: 12 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="cloud-computing.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card Curso 8 -->
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="./analise-negocios.jpg" class="card-img-top" alt="Curso de Análise de Negócios">
+                        <div class="card-body">
+                            <h5 class="card-title">Análise de Negócios</h5>
+                            <p class="card-text">R$ 400,00</p>
+                            <p class="card-text"><small>Duração: 8 semanas</small></p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="análise-negocios.html" class="btn btn-primary">Saiba Mais</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contato</h2>
+            <form>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="name" class="form-label">Nome</label>
+                        <input type="text" class="form-control" id="name" required>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label for="email" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="col-12 mb-3">
+                        <label for="message" class="form-label">Mensagem</label>
+                        <textarea class="form-control" id="message" rows="4" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+                <button class="whatsapp-button">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" style="width: 24px; height: 24px;">
+                    Contate-nos via WhatsApp
+                </button>
+            </form>
+        </div>
+    </section>
+    <!-- Seção de Localização -->
+    <section id="location" class="location-section">
+        <div class="container">
+            <h2>Localização</h2>
+            <p>
+                Chapecó, Av. Nereu Ramos, n. 3777-D Bairro Seminário Chapecó (SC) CEP 89813-000
+            </p>
+            <div class="map-responsive">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15127.665868894032!2d-52.6224202!3d-27.0970659!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x949d9e3ab9b400b%3A0x2de54aa9b4b1ed00!2sAv.%20Nereu%20Ramos%2C%203777-D%20-%20Bairro%20Semin%C3%A1rio%2C%20Chapec%C3%B3%20-%20SC%2C%2089813-000!5e0!3m2!1spt-BR!2sbr!4v1633005636266!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- Footer -->
+    <footer class="footer bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2024 PhoenixTech Solutions. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
