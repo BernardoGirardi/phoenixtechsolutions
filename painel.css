@@ -362,6 +362,8 @@ footer {
     gap: 10px; /* Espaçamento entre o ícone e o texto */
     cursor: pointer;
     margin-top: 15px;
+    text-decoration: none; /* Remove a linha embaixo */
+    color: inherit; /* Remove a cor padrão do link e herda a cor do texto do pai */
 }
 
 .whatsapp-button:hover {
