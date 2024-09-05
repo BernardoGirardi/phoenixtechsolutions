@@ -368,10 +368,14 @@ footer {
 
 .whatsapp-button:hover {
     background-color: #1ebe57; /* Cor mais clara para hover */
+    text-decoration: none; /* Remove a linha embaixo */
+    color: inherit; /* Remove a cor padrão do link e herda a cor do texto do pai */
 }
 
 .whatsapp-button i {
     font-size: 1.5rem; /* Tamanho do ícone */
+    text-decoration: none; /* Remove a linha embaixo */
+    color: inherit; /* Remove a cor padrão do link e herda a cor do texto do pai */
 }
 
 /* Estilos Responsivos */
